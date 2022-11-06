@@ -384,3 +384,10 @@ gap: 8px;
 	letter-spacing: 0.03em;
 	color: var(--main-text-color);
 }
+
+.icon-contact {
+	display: inline-block;
+	fill: currentColor;
+	stroke: #188CE8;
+	margin-right: 10px;
+  }
