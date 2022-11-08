@@ -1,3 +1,3 @@
 # Домашнє завдання #4
 [Подивитись на GitHub Pages >>>](https://attygoit.github.io/goit-markup-hw-04/)<br>
-[Подивитись код у репозиторії >>>]()
+[Подивитись код у репозиторії >>>](https://github.com/attygoit/goit-markup-hw-04)
