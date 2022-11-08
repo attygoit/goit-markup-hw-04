@@ -1,4 +1,3 @@
-/* Загальні стилі */
 *,
 *::before,
 *::after {
@@ -74,7 +73,7 @@ img {
   list-style-type: none;
 }
 
-/* лого */
+/* logo */
 
 .logo {
   display: inline-block;
@@ -161,6 +160,9 @@ img {
 
 .header-phone,
 .header-mail {
+
+  display: flex;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -178,6 +180,7 @@ img {
 
 .footer-block {
   display: flex;
+  align-items: baseline;
 }
 
 .address-list {
@@ -218,8 +221,11 @@ img {
 
 .footer-social-link {
   display: flex;
-  padding: 12px 12px;
+  align-items: center;
+  justify-content: center;
   border-radius: 50%;
+  width: 100%;
+  height: 100%;
   background-color: var(--footer-icons-bg-color);
   transition: 300ms linear;
 }
@@ -239,7 +245,6 @@ img {
 
 .footer-social-header {
   display: flex;
-  margin-top: 12px;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -249,7 +254,9 @@ img {
   color: var(--accent-text-color);
 }
 
-/* Студія */
+/* СТУДІЯ */
+
+/* Hero header - основний заголовок + кнопка замовлення послуги */
 
 .hero {
   background-image: linear-gradient(
@@ -259,7 +266,7 @@ img {
     ),
     url(../img/hero-bg-img.jpeg);
   background-color: var(--accent-bg-color);
-  width: 1600px;
+  max-width: 1600px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -302,6 +309,9 @@ img {
   background-color: var(--order-button-bg-color);
 }
 
+/* Особливості - заголовок секції прихований */
+
+
 .visually-hidden {
   position: fixed;
   transform: scale(0);
@@ -340,6 +350,8 @@ img {
   color: var(--main-text-color);
 }
 
+/* Чим ми займаємося (фото на яких зображена діяльність) */
+
 .activity-section.section {
   padding-top: 0px;
 }
@@ -348,6 +360,8 @@ img {
   gap: 30px;
   list-style: none;
 }
+
+/* Наша команда (фото співробітників та підпис - прізвище, імʼя та назва посади, іконки соцмереж) */
 
 .team {
   background-color: var(--secondary-bg-color);
@@ -405,7 +419,10 @@ img {
 
 .social-link {
   display: flex;
-  padding: 12px 12px;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
   border-radius: 50%;
   color: var(--social-link-color);
   transition: 300ms linear;
@@ -421,16 +438,25 @@ img {
   fill: currentColor;
 }
 
+/* Постійні клієнти */
+
 .clients-list {
   display: flex;
   gap: 30px;
+}
+
+.clients-list-item {
+width: 170px;
+height: 92px;
 }
 
 .clients-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--client-section-grey);
+  width: 100%;
+  height: 100%;
+  color: var(--social-link-color);
   border: 1px solid var(--social-link-color);
   border-radius: 4px;
 }
@@ -446,7 +472,7 @@ img {
   fill: currentColor;
 }
 
-/* Портфоліо */
+/* ПОРТФОЛІО */
 
 .button-list {
   display: flex;
@@ -498,9 +524,14 @@ img {
 .portfolio-card {
   background-color: var(--accent-text-color);
 }
-.portfolio-card:active,
-.portfolio-card:focus,
-.portfolio-card:hover {
+
+.portfolio-card-link {
+	display: block;
+}
+.portfolio-card-link:active,
+.portfolio-card-link:focus,
+.portfolio-card-link:hover {
+	display: block;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
