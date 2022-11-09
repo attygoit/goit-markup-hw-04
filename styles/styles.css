@@ -154,6 +154,9 @@ img {
 .head-cont-item:not(:first-child) {
   margin-left: 50px;
 }
+.head-cont-item {
+  padding: 32px 0;
+}
 
 .header-phone,
 .header-mail {
